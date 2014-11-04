@@ -23,8 +23,8 @@ public class HTMLlib {
 		String codeHTML = "";
 		codeHTML += "<div data-role=\"page\" id=\"accueil\" data-title=\"OPTIweb - V0.1\">\n";
 		codeHTML += "<div data-role=\"header\" data-add-back-btn=\"true\">\n";
-		codeHTML += "<h1>P<span class=\"landscape\">rojets </span>tut<span class=\"landscape\">orés</span> 2014-2015<br/>Département INFO<span class=\"landscape\">RMATIQUE</span><br/>IUT de Blagnac</h1>\n";
-		codeHTML += "<a href=\"#credits\" data-theme=\"b\" class=\"ui-btn-right\">Crédits</a>\n";
+		codeHTML += "<h1>P<span class=\"landscape\">rojets </span>tut<span class=\"landscape\">orÃ©s</span> 2014-2015<br/>DÃ©partement INFO<span class=\"landscape\">RMATIQUE</span><br/>IUT de Blagnac</h1>\n";
+		codeHTML += "<a href=\"#credits\" data-theme=\"b\" class=\"ui-btn-right\">CrÃ©dits</a>\n";
 		codeHTML += "</div>\n";
 		codeHTML += "<div data-role=\"content\">\n";
 		codeHTML += "<ul data-role=\"listview\" data-inset=\"true\" id=\"listeSources\">\n";
@@ -43,24 +43,24 @@ public class HTMLlib {
 	
 	private static String htmlGeneratePage_credits(Controller ctrl) {
 		String codeHTML = "";
-		codeHTML +="<div data-role=\"page\" id=\"credits\" data-title=\"OPTIweb - V0.1 - Crédits\">\n";
+		codeHTML +="<div data-role=\"page\" id=\"credits\" data-title=\"OPTIweb - V0.1 - CrÃ©dits\">\n";
 		codeHTML +="<div data-role=\"header\" data-add-back-btn=\"true\">\n";
-		codeHTML +="<h1>Crédits</h1>\n";
+		codeHTML +="<h1>CrÃ©dits</h1>\n";
 		codeHTML +="</div>\n";
 		codeHTML +="<div data-role=\"content\">\n";
-		codeHTML +="    <p>Cette application a été réalisée dans le cadre du module M3301/MPA du DUT Informatique à l'IUT de Blagnac.</p>\n";
+		codeHTML +="    <p>Cette application a Ã©tÃ© rÃ©alisÃ©e dans le cadre du module M3301/MPA du DUT Informatique Ã  l'IUT de Blagnac.</p>\n";
 		codeHTML +="<ul data-role=\"listview\" data-inset=\"true\" id=\"contacts\" data-theme=\"a\" data-divider-theme=\"b\">\n";
 		codeHTML +="    <li data-role=\"list-divider\">Product Owner</li>\n";
-		codeHTML +="    <li>André PÉNINOU</li>\n";
-		codeHTML +="    <li>Université Toulouse 2 - IUT de Blagnac\n";
-		codeHTML +="    <br/>Département INFORMATIQUE</li>\n";
+		codeHTML +="    <li>AndrÃ© PÃ‰NINOU</li>\n";
+		codeHTML +="    <li>UniversitÃ© Toulouse 2 - IUT de Blagnac\n";
+		codeHTML +="    <br/>DÃ©partement INFORMATIQUE</li>\n";
 		codeHTML +="</ul>\n";
 		codeHTML +="<ul data-role=\"listview\" data-inset=\"true\" id=\"listecredits\" data-theme=\"a\" data-divider-theme=\"b\">\n";
-		codeHTML +="    <li data-role=\"list-divider\">Membres de l'équipe enseignante</li>\n";
-		codeHTML +="<li>Jean-Michel BRUEL</li><li>Jean-Michel INGLEBERT</li><li>André PÉNINOU</li><li>Olivier ROQUES</li>\n";
+		codeHTML +="    <li data-role=\"list-divider\">Membres de l'Ã©quipe enseignante</li>\n";
+		codeHTML +="<li>Jean-Michel BRUEL</li><li>Jean-Michel INGLEBERT</li><li>AndrÃ© PÃ‰NINOU</li><li>Olivier ROQUES</li>\n";
 		codeHTML +="</ul>\n";
 		codeHTML +="<ul data-role=\"listview\" data-inset=\"true\" id=\"listepowered\" data-theme=\"a\" data-divider-theme=\"b\">\n";
-		codeHTML +="    <li data-role=\"list-divider\">Propulsé par</li>\n";
+		codeHTML +="    <li data-role=\"list-divider\">PropulsÃ© par</li>\n";
 		codeHTML +="   <li><a href=\"http://jquerymobile.com/\" target=\"autrePage\">http://jquerymobile.com/</a></li>\n";
 		codeHTML +="    <li><a href=\"http://fortawesome.github.io/Font-Awesome/\" target=\"autrePage\">http://fortawesome.github.io/Font-Awesome/</a></li>\n";
 		codeHTML +="</ul>\n";

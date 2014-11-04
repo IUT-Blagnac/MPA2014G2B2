@@ -62,7 +62,7 @@ public class Controller {
 		enteteGroupes.add("id");
 		enteteGroupes.add("groupe");
 		enteteGroupes.add("nom");
-		enteteGroupes.add("prénom");
+		enteteGroupes.add("prÃ©nom");
 		
 		enteteProjets = new Vector<String>();
 		enteteProjets.add("id");
@@ -74,7 +74,7 @@ public class Controller {
 		
 		enteteIntervenants = new Vector<String>();
 		enteteIntervenants.add("id");
-		enteteIntervenants.add("prénom");
+		enteteIntervenants.add("prÃ©nom");
 		enteteIntervenants.add("nom");
 
 
@@ -90,7 +90,7 @@ public class Controller {
 	}
 	
 	/**
-	 * Permet de créer un Vector<Vector<String>> à partir d'un Vector<Sujets>
+	 * Permet de creer un Vector<Vector<String>> a partir d'un Vector<Sujets>
 	 * @return Vector<Vector<String>>
 	 */
 	public Vector<Vector<String>> castVecSujets(){
@@ -109,7 +109,7 @@ public class Controller {
 	}
 	
 	/**
-	 * Permet de créer un Vector<Vector<String>> à partir d'un Vector<Groupes>
+	 * Permet de creer un Vector<Vector<String>> a partir d'un Vector<Groupes>
 	 * @return Vector<Vector<String>>
 	 */
 	public Vector<Vector<String>> castVecGroupes(){
@@ -130,7 +130,7 @@ public class Controller {
 	}
 	
 	/**
-	 * Permet de créer un Vector<Vector<String>> à partir d'un Vector<Projets>
+	 * Permet de creer un Vector<Vector<String>> a partir d'un Vector<Projets>
 	 * @return Vector<Vector<String>>
 	 */
 	public Vector<Vector<String>> castVecProjets(){
@@ -150,7 +150,7 @@ public class Controller {
 	}
 	
 	/**
-	 * Permet de créer un Vector<Vector<String>> à partir d'un Vector<Intervenants>
+	 * Permet de creer un Vector<Vector<String>> a partir d'un Vector<Intervenants>
 	 * @return Vector<Vector<String>>
 	 */
 	public Vector<Vector<String>> castVecIntervenants(){
@@ -279,56 +279,5 @@ public class Controller {
 	public void setIntervenantVide(Intervenants intervenantVide) {
 		this.intervenantVide = intervenantVide;
 	}
-	
-	
-	/**
-	 * Sauvegarde le modele de donnee dans des CSV
-	 * 
-	 * @param prefixPath
-	 * @throws Exception
-	 */
-	/*public void sauvegarder(String prefixPath) throws Exception {
-		// Projets
-		String dataTabProjet[][] = new String[projets.size()][2];
-		for(int i=0;i<projets.size();i++) {	
-			dataTabProjet[i][0] = ((Projets) projets.get(i)).getGroupe().getIdGroupe();
-			dataTabProjet[i][1] = projets.get(i).getSujet().getId();
-		}
-		ArrayList<String[]> dataArray = new ArrayList<String[]>();
-		for(int i=0; i<dataTabProjet.length; i++) {
-			dataArray.add(dataTabProjet[i]);
-		}
-		OPTIlib.CSV_Write(dataArray, prefixPath+"projets.csv");
-		
-		// Intervenants
-		
-		String dataTabIntervenants[][] = new String[intervenants.size()][2];
-		for(int i=0;i<intervenants.size();i++) {	
-			dataTabIntervenants[i][0] = intervenants.get(i).getPrenom();
-			dataTabIntervenants[i][1] = intervenants.get(i).getNom();
-		}
-		dataArray = new ArrayList<String[]>();
-		for(int i=0; i<dataTabIntervenants.length; i++) {
-			dataArray.add(dataTabIntervenants[i]);
-		}
-		OPTIlib.CSV_Write(dataArray, prefixPath+"Intervenants.csv");
-		
-		
-		//Sujets
-		
-		String dataTabSujets[][] = new String[sujets.size()][3];
-		for(int i=0;i<sujets.size();i++) {	
-			dataTabSujets[i][0] = sujets.get(i).getId();
-			dataTabSujets[i][1] = sujets.get(i).getNom();
-			dataTabSujets[i][2] = sujets.get(i).getTitre();
-		}
-		dataArray = new ArrayList<String[]>();
-		for(int i=0; i<dataTabSujets.length; i++) {
-			dataArray.add(dataTabSujets[i]);
-		}
-		OPTIlib.CSV_Write(dataArray, prefixPath+"Sujets.csv");
-
-	
-	}*/
 	
 }
