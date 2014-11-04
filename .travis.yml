@@ -27,6 +27,7 @@ script:
   - echo Tests
   - java -cp .:../../junit.jar Tests/OPTIlibTest
   - cd ../
+  - ls -Rall
   - ./OPTI.jar
   - cd OPTIweb/test
   - cp OPTIwebprof.html /tmp/OPTIweb.html
