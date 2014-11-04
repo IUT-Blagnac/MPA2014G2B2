@@ -24,6 +24,7 @@ script:
   - cd bin
   - echo Executable
   - jar cvfm ../OPTI.jar ../META-INF/MANIFEST.MF *
+  - chmod 777 OPTI.jar
   - echo Tests
   - java -cp .:../../junit.jar Tests/OPTIlibTest
   - cd ../
