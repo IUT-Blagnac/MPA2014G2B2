@@ -1,0 +1,30 @@
+= Projet OPTI : Bilan Humain
+:Author:  DUT/INFO/M3301
+:lang: fr
+
+
+
+== Les apports personnels d’un tel projet :
+
+
+Nous avons pu développer complétement un logiciel.
+
+Dans ce projet la plupart d'entre nous a pu avoir une experience de "SCRUM master".
+
+
+== Ressenti de l'équipe :
+
+
+Il y a eu une bonne entente au sein du groupe, le travail a été bien réparti
+et tout le monde a pu effectuer les différentes tâches que nous demandait ce projet.
+
+Cependant nous nous sommes rendu compte de l’importance de la communication dans un projet.
+
+Les échanges entre les testeurs et les développeurs s'avèrent primordiaux.
+
+Durant le développement de notre projet les développeurs se sont un peu trop isolés
+et ont parfois utilisé des structures de données ou des fonctions peu pertinentes.
+
+Une meilleure communication lors de la préparation des sprints ainsi qu'un meilleur appui du manager
+ aurait pu éviter ces pertes de temps inutiles. 
+
