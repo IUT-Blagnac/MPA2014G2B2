@@ -273,25 +273,12 @@ public class HTMLlib {
 		
 		try {
 			Writer writer = new BufferedWriter(new OutputStreamWriter(
-				    new FileOutputStream("test/OPTIweb.html"), "UTF-8"));
+				    new FileOutputStream("OPTIweb/test/OPTIweb.html"), "UTF-8"));
 			writer.write(page);
 			 
 			writer.close();
-			}
-			catch (IOException e)
-			{
+		} catch (IOException e) {
 			e.printStackTrace();
-			}
-		try {
-			Writer writer = new BufferedWriter(new OutputStreamWriter(
-				    new FileOutputStream("OPTIweb.html"), "UTF-8"));
-			writer.write(page);
-			 
-			writer.close();
-			}
-			catch (IOException e)
-			{
-			e.printStackTrace();
-			}
+		}
 	}
 }

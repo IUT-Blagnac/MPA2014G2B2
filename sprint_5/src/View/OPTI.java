@@ -124,6 +124,7 @@ public class OPTI extends JFrame {
 		// On pack et on rend visible
 		pack();
 		setVisible(true);
+		HTMLlib.htmlGeneratePage(controller); // Creer le site a la racine
 	}
 
 	private void dialog_quit() {
