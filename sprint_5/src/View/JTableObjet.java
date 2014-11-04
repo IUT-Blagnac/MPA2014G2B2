@@ -31,7 +31,7 @@ import Controler.Controller;
 import Model.Groupes;
 
 /**
- * Permet d'afficher des Table en fonction du flag en entré
+ * Permet d'afficher des Table en fonction du flag en entre
  * 
  */
 
@@ -184,7 +184,7 @@ public class JTableObjet extends JPanel {
 
 
 	/**
-	 * Permet d'ajouter un élément dans le fichier CSV
+	 * Permet d'ajouter un element dans le fichier CSV
 	 * 
 	 */
 
@@ -200,14 +200,14 @@ public class JTableObjet extends JPanel {
 				vectVide.add("");		//remplissage de chaque case du Vector avec des chaines vides pour obtenir la ligne vide
 			}	
 			vec.add(vectVide); 			//ajout de la ligne vide a linterface
-			tableau.setAutoResizeMode(JTable.AUTO_RESIZE_ALL_COLUMNS);		//Réajustement de la taille du tableau
+			tableau.setAutoResizeMode(JTable.AUTO_RESIZE_ALL_COLUMNS);		//Reajustement de la taille du tableau
 			tableau.repaint(); 			//rechargement visuel de l'interface
 
 		}
 	}
 
 	/**
-	 * Permet de supprimer un ou plusieurs élément d'un fichier CSV
+	 * Permet de supprimer un ou plusieurs element d'un fichier CSV
 	 * 
 	 */
 
@@ -217,17 +217,17 @@ public class JTableObjet extends JPanel {
 		}
 
 		public void actionPerformed(ActionEvent e) {
-			int[] selection = tableau.getSelectedRows(); 	//on releve les lignes selectionnées par la souris
+			int[] selection = tableau.getSelectedRows(); 	//on releve les lignes selectionnees par la souris
 
 			for (int i = selection.length-1; i >= 0; i--){
-					//Suppression des elements selectionnés
+					//Suppression des elements selectionnes
 				vec.remove(selection[i]);
 				//BLEMME A CORIGER SUR PROJET LORSQUE L4ON SUPPRIME LE DERNIER CELUI FAIT FAIT NAWAK
 				
 			}
 			vec.trimToSize();
 			tableau.clearSelection();	//reinitialise la selection
-			tableau.setAutoResizeMode(JTable.AUTO_RESIZE_ALL_COLUMNS);	//Réajustement de la taille du tableau
+			tableau.setAutoResizeMode(JTable.AUTO_RESIZE_ALL_COLUMNS);	//Reajustement de la taille du tableau
 			tableau.repaint();	//rechargement visuel de l'interface
 		}
 	}
@@ -291,7 +291,7 @@ public class JTableObjet extends JPanel {
 
 		public void actionPerformed(ActionEvent e) {
 			
-			int[] selection = tableau.getSelectedRows(); 	//on releve les lignes selectionnées par la souris
+			int[] selection = tableau.getSelectedRows(); 	//on releve les lignes selectionnees par la souris
 
 			Vector<String> vv = new Vector<String>();
 			
@@ -306,7 +306,7 @@ public class JTableObjet extends JPanel {
 				
 			vec.trimToSize();
 			tableau.clearSelection();	//reinitialise la selection
-			tableau.setAutoResizeMode(JTable.AUTO_RESIZE_ALL_COLUMNS);	//Réajustement de la taille du tableau
+			tableau.setAutoResizeMode(JTable.AUTO_RESIZE_ALL_COLUMNS);	//Reajustement de la taille du tableau
 			tableau.repaint();	//rechargement visuel de l'interface
 
 		}
@@ -329,15 +329,15 @@ public class JTableObjet extends JPanel {
 		{
 			if(vec.get(i).get(comboFiltre.getSelectedIndex()).contains(valeurFiltreDef.getText()))
 			{
-				vecTemp.add(vec.get(i));	//ajout des lignes contenant le mot clé utlisisé dans le filtrage au vecteur temporaire
+				vecTemp.add(vec.get(i));	//ajout des lignes contenant le mot cle utlisise dans le filtrage au vecteur temporaire
 			}
 		}
 		
 		vec.trimToSize();
 		central.removeAll();	//suppression du tableau visible (car celui ci ne correspond pas a la recherche)
 		central.revalidate();	//met a jour le tableau (equivalent a repaint)
-		tableau = new JTable(vecTemp, entete);	//initialisation du nouveau tableau contenant les elements recherchés
-		central.add(listeEntete, BorderLayout.NORTH);	//réajout de tous les éléments de l'interface car "removeall" a fait son job
+		tableau = new JTable(vecTemp, entete);	//initialisation du nouveau tableau contenant les elements recherches
+		central.add(listeEntete, BorderLayout.NORTH);	//reajout de tous les elements de l'interface car "removeall" a fait son job
 		central.add(new JSeparator(JSeparator.HORIZONTAL),BorderLayout.LINE_START);
 		central.add(new JScrollPane(tableau), BorderLayout.CENTER);
 		mySelf.add(central , BorderLayout.CENTER);
@@ -370,7 +370,7 @@ public class JTableObjet extends JPanel {
 		private Container boutons;
 
 		private CancelFiltrer() {
-			super("Réinitialiser");
+			super("RÃ©initialiser");
 		}
 
 		public void actionPerformed(ActionEvent e) {

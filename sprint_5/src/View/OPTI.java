@@ -36,14 +36,14 @@ public class OPTI extends JFrame {
 		this.setPreferredSize(new Dimension(controller.getRec().width/2, controller.getRec().height));
 		controller.getMyFrameCSV().setPreferredSize(new Dimension(controller.getRec().width/2, controller.getRec().height));
 		controller.getMyFrameCSV().setLocation(controller.getRec().width/2, 0);
-		// Création des onglets
+		// Creation des onglets
 		controller.setTabPan(new JTabbedPane());
 		
 
-		// Création et ajout du Jcontroller.getMenuBar();
+		// Creation et ajout du Jcontroller.getMenuBar();
 		controller.setMenuBar(new JMenuBar());
 
-		// Création des boutons du Jcontroller.getMenuBar();
+		// Creation des boutons du Jcontroller.getMenuBar();
 		JMenu menu = new JMenu("Menu");
 		//JMenuItem charge = new JMenuItem("Recharger les csv..");
 		JMenuItem ouvrir = new JMenuItem("Ouvrir les csv");
@@ -115,7 +115,7 @@ public class OPTI extends JFrame {
 			}
 		});
 
-		// Lancement de l'affichage d'un CSV puis création de l'onglet
+		// Lancement de l'affichage d'un CSV puis creation de l'onglet
 		// newOnglet(controller.getTabPan());
 		
 		OPTIlib.rechargeIt(controller);
@@ -129,7 +129,7 @@ public class OPTI extends JFrame {
 	private void dialog_quit() {
 		int confirmation;
 		confirmation = JOptionPane.showConfirmDialog(this,
-				"Voulez-vous réellement quitter cette application ?",
+				"Voulez-vous rÃ©ellement quitter cette application ?",
 				"Quitter ?", JOptionPane.YES_NO_OPTION,
 				JOptionPane.QUESTION_MESSAGE);
 		if (confirmation == JOptionPane.YES_OPTION) {
@@ -140,7 +140,7 @@ public class OPTI extends JFrame {
 	private void dialog_quit2() {
 		int confirmation;
 		confirmation = JOptionPane.showConfirmDialog(this,
-				"Voulez-vous réellement quitter cette page ?",
+				"Voulez-vous rÃ©ellement quitter cette page ?",
 				"Quitter ?", JOptionPane.YES_NO_OPTION,
 				JOptionPane.QUESTION_MESSAGE);
 		if (confirmation == JOptionPane.YES_OPTION) {
@@ -156,13 +156,13 @@ public class OPTI extends JFrame {
 	}
 
 	private void dialog_about() {
-		JOptionPane.showConfirmDialog(this, "Université Toulouse 2 \n"
+		JOptionPane.showConfirmDialog(this, "UniversitÃ© Toulouse 2 \n"
 				+ "IUT de Blagnac \n" + "DUT INFO S3/Module MPA \n"
 				+ "Projet OPTI \n" + numSprint + " \n" + " \n"
 				+ "Membre du groupe:\n" + "- BADETS Julie \n"
 				+ "- DUROZIER Alexane \n" + "- GAUTHIER Nicolas \n"
 				+ "- GIRARD Theophane \n" + "- GODARD Gabriel \n"
-				+ "- PRÉVIDENTE Simon \n", "A propos",
+				+ "- PRÃ‰VIDENTE Simon \n", "A propos",
 				JOptionPane.CLOSED_OPTION, JOptionPane.INFORMATION_MESSAGE);
 	}
 
