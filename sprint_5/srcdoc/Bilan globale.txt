@@ -1,0 +1,39 @@
+= OPTIweb : Bilan du projet
+:Author:  DUT/INFO/M3301
+:lang: fr
+
+*********************
+'OPTIweb.html' est une application HTML de *consultation*
+des projets tutorés gérés par OPTI.
+
+'OPTIweb.html' est compatible avec l'ensemble des
+navigateurs et supports du moment (PC, tablettes, smartphones).
+*********************
+
+== Quels éléments ont été favorables à la réussite du projet ?
+
+- Le fait d'avoir le temps
+
+== Quelles difficultés ont été rencontrées ?
+
+- UTF-8
+- Code mal comenté
+- Pas de message dans les commits
+
+== Le projet initial a-t-il été suivi ?
+
+- Oui
+
+== Les objectifs ont-ils été atteints ?
+
+- Oui
+
+== Le budget prévisionnel a-t-il été respecté ?
+
+- Non, car heure supplémentaire
+
+== Comment le projet a-t-il été vécu par les intervenants, les professeurs et les élèves ?
+
+- Un a rien vécu, une l'a mal vécu, un autre a faim, le scrum master à fond et moi-même qui a sacrifié une nuit pour le projet !
+
+
