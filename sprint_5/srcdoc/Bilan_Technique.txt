@@ -23,7 +23,70 @@ Formation:: DUT INFO S3/Module MPA
 Projet:: OPTI/OPTIweb
 ====
 
-== Fonctionnalités disponibles - SPRINT 4
+En tant qu'administrateur, je peux :
+
+. afficher la liste des étudiants ou des intervenants ou des sujets ou des projets d’un fichier .csv dans l’IHM, en supprimer certains puis l’enregistrer dans un fichier .csv de mon choix,
+
+. afficher la liste des étudiants puis ajouter un nouvel étudiant et sauvegarder la liste des étudiants dans un fichier .csv de mon choix,
+
+. afficher la liste des intervenants puis ajouter un nouvel intervenant et sauvegarder la liste des intervenants dans un fichier .csv de mon choix,
+
+. afficher la liste des sujets puis ajouter un nouveau sujet et sauvegarder la liste des projets dans un fichier .csv de mon choix,
+
+. afficher la liste des projets puis ajouter un nouveau projet et sauvegarder la liste des projets dans un fichier .csv de mon choix.
+
+
+=== Fonctionnalités disponibles à la fin du SPRINT {numSprint}
+
+En tant qu’administrateur, je peux :
+
+. afficher, modifier puis sauvegarder n'importe quelle liste.
+. dupliquer un projet.
+. afficher la liste des groupes et voir le projet, le sujet, les étudiants et l’ensemble des intervenants du projet.
+. afficher la liste des étudiants et voir le groupe, le sujet, le projet et l’ensemble des intervenants du projet.
+. une fois la liste des étudiants ou des intervenants ou des sujets ou des projets affichée dans l’IHM, je peux sélectionner (filtrer) les éléments affichés sur chacun des champs du fichier .csv correspondant.
+. afficher la liste des projets puis cloner n’importe quel projet, l'éditer et sauvegarder la liste des projets dans un fichier .csv de mon choix.
+
+=== Tests Fonctionnels
+
+
+==== Plans de test fonctionnels des interfaces graphique de l’application
+
+[cols="h,6*",options="header",width="80%"]
+|==================================
+|      								|Test ouverture fichier inexistant/inconnu	|Test lecture fichier deja existant	|Test lecture fichier vide		|Test création fichier avec droits insuffisants	|Test écriture contenu conforme		|Test lecture Csv une seule colonne
+|afficher la liste des étudiants	|test_read_unknown_csv()					|test_read_content_csv()			|test_read_csv_vide()			|test_write_without_permissions()				|test_write_data_conform()			|test_read_csv_uneColonne()
+|afficher la liste des intervenants	|test_read_unknown_csv()					|test_read_content_csv()			|test_read_csv_vide()			|test_write_without_permissions()				|test_write_data_conform()			|test_read_csv_uneColonne()
+|afficher la liste des sujets		|test_read_unknown_csv()					|test_read_content_csv()			|test_read_csv_vide()			|test_write_without_permissions()				|test_write_data_conform()			|test_read_csv_uneColonne()
+|afficher la liste des projets		|test_read_unknown_csv()					|test_read_content_csv()			|test_read_csv_vide()			|test_write_without_permissions()				|test_write_data_conform()			|test_read_csv_uneColonne()
+|sauvegarder les modifications		|						|					|				|								|test_sauvegarder()				|
+|==================================
+
+==== Scénario de Tests Fonctionnels
+
+. Double cliquez sur l'application avec l'extention .JAR : une fenetre doit s'ouvrir affichant la liste des groupes et des étudiants.
+. Cliquez sur un groupe ou un étudiant, les projets, sujets, intervenants et étudiants (dans le cas où on a selectionné un groupe) correspondant doivent s'afficher.
+. Cliquez sur "Menu" puis "Ouvrir les csv", une fenêtre doit s'ouvrir, elle doit contenir un onglet par fichier .csv.
+. Cliquez sur un des boutons "Ajouter", une ligne vide doit apparaître.
+. Cliquez sur n'importe quelle ligne et tapez quelque chose au clavier, la ligne sélectionnée doit se modifier.
+. Sélectionnez une ligne et cliquez sur le bouton "Supprimer" situé en-dessous, la ligne sélectionnée doit disparaître.
+. Dans la liste déroulante, sélectionnez un champ, ecrivez le libellé du champ en question correspondant à une ou des entrées du tableau. Cliquez sur "filtrer", seules les entrées filtrées doivent rester visibles.
+. Cliquez sur "Enregistrer sous...", une fenêtre de parcours de fichiers doit s'ouvrir.
+
+
+=== Documentation Java
+
+Une javadoc est également link:javadoc/index.html[disponible ici] :
+
+ . Les données sont stockées dans des objets link:javadoc/Etudiants.html[Etudiants], link:javadoc/Groupes.html[Groupes], link:javadoc/Projets.html[Projets], link:javadoc/Sujets.html[Sujets] et link:javadoc/Intervenants.html[Intervenants].
+ . Nous avons également un link:javadoc/Controller.html[Controller].
+ . Pour l'interface, nous utilisons les classes link:javadoc/OPTI.html[OPTI], link:javadoc/OPTIlib.html[OPTIlib], link:javadoc/ActionListenerAS.html[ActionListenerAS], link:javadoc/ActionListenerBouton.html[ActionListenerBouton], link:javadoc/AfficherCsv.html[AfficherCsv] et link:javadoc/JTableObjet.html[JTableObjet].
+
+
+=== Diagramme de classe
+
+.Modèle de données mis en place lors de ce Sprint
+image::diagClass.png[link="Diagramme de classe"]
 
 .Application
 --
