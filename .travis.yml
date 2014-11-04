@@ -16,11 +16,18 @@ script:
   - ls -alF
   - cd sprint_5
   - echo Compilation
-  - mkdir bin
   - javac -d ./bin ./src/Controler/*.java ./src/Model/*.java ./src/View/*.java
+  - javac -cp ./bin/;./tools/junit.jar -d ./bin/ ./src/Tests/OPTIlibTest.java
+  - java -cp .;../tools/junit.jar -d ./bin/ Tests/OPTIlibTest
   - java -jar ../plantuml.jar -Tpng -o srcdoc/images srcdoc/diag0.puml
   - python ../asciidoc-8.6.7/asciidoc.py -a data-uri -o srcdoc/presentationFinale.html srcdoc/presentationFinale.txt
   - ls -alF srcdoc
   - cd OPTIweb/test
   - cp OPTIwebprof.html /tmp/OPTIweb.html
   - casperjs test casperAccueil.js
+  - casperjs test casperCredits.js
+  - casperjs test casperEtudiants.js
+  - casperjs test casperIntervenants.js
+  - casperjs test casperProjets.js
+  - casperjs test casperSujets.js
+  - ls -alF srcdoc
