@@ -29,7 +29,7 @@ script:
   - cd ../
   - chmod 777 OPTI.jar
   - ls -Rall
-  - ./OPTI.jar
+  - java -jar OPTI.jar
   - cd OPTIweb/test
   - cp OPTIwebprof.html /tmp/OPTIweb.html
   - casperjs test casperAccueil.js
