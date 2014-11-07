@@ -8,7 +8,7 @@ set RUNTEST=1
 @echo ///////////////////////////////////////////////////////
 @echo // COMPILATION
 @echo ///////////////////////////////////////////////////////
-javac -d %BINDIR% %SRCDIR%Controler/*.java %SRCDIR%Model/*.java %SRCDIR%View/*.java
+javac -encoding UTF-8 -d %BINDIR% %SRCDIR%Controler/*.java %SRCDIR%Model/*.java %SRCDIR%View/*.java
 javac -cp ./bin/;./tools/junit.jar -d %BINDIR% %SRCDIR%Tests/OPTIlibTest.java
 
 @echo ///////////////////////////////////////////////////////
@@ -27,7 +27,7 @@ if "%RUNTEST%"=="1" (
  java -cp .;../tools/junit.jar Tests/OPTIlibTest
  pause
  cd %SPRINTDIR%
- cd test
+ cd OPTIweb/test
  casperjs.bat test casperAccueil.js
 pause
  casperjs.bat test casperCredits.js
