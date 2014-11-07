@@ -9,7 +9,7 @@ set RUNTEST=1
 @echo // COMPILATION
 @echo ///////////////////////////////////////////////////////
 javac -encoding UTF-8 -d %BINDIR% %SRCDIR%Controler/*.java %SRCDIR%Model/*.java %SRCDIR%View/*.java
-javac -cp ./bin/;./tools/junit.jar -d %BINDIR% %SRCDIR%Tests/OPTIlibTest.java
+javac -encoding UTF-8 -cp ./bin/;./tools/junit.jar -d %BINDIR% %SRCDIR%Tests/OPTIlibTest.java
 
 @echo ///////////////////////////////////////////////////////
 @echo // CREATION de l'executable
@@ -27,6 +27,7 @@ if "%RUNTEST%"=="1" (
  java -cp .;../tools/junit.jar Tests/OPTIlibTest
  pause
  cd %SPRINTDIR%
+ java -jar OPTICastHTML.jar
  cd OPTIweb/test
  casperjs.bat test casperAccueil.js
 pause
@@ -36,10 +37,11 @@ pause
 pause
  casperjs.bat test casperEtudiants.js
 pause
- casperjs.bat test casperAccueil.js
+ casperjs.bat test casperIntervenants.js
 pause
  casperjs.bat test casperProjets.js
 pause
  casperjs.bat test casperSujets.js
+pause
 )
 
