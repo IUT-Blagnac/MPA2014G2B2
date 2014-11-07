@@ -219,10 +219,10 @@ public class HTMLlib {
 			}
 			
 			codeHTML += "<li data-find=\"" + ctrl.getIntervenants().get(indice).getPrenom() + " " + ctrl.getIntervenants().get(indice).getNom() + "\">\n";
-			codeHTML += "<a href=\"#projets\">\n";
-			codeHTML += ctrl.getIntervenants().get(indice).getPrenom() + " " + ctrl.getIntervenants().get(indice).getNom() + "\n";
-			codeHTML += "<span class=\"ui-li-count\" style=\"right: 120px !important;\" title=\"Client\">" + nbClient + "</span>\n";
-			codeHTML += "<span class=\"ui-li-count\" title=\"Superviseur\">" + nbSuperviseur + "</span>\n";
+			codeHTML += "<a href=\"#projets\">";
+			codeHTML += ctrl.getIntervenants().get(indice).getPrenom() + " " + ctrl.getIntervenants().get(indice).getNom();
+			codeHTML += "<span class=\"ui-li-count\" style=\"right: 120px !important;\" title=\"Client\">" + nbClient + "</span>";
+			codeHTML += "<span class=\"ui-li-count\" title=\"Superviseur\">" + nbSuperviseur + "</span>";
 			codeHTML += "</a>\n";
 			codeHTML += "</li>\n";
 		}
