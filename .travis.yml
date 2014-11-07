@@ -24,12 +24,13 @@ script:
   - cd bin
   - echo Executable
   - jar cvfm ../OPTI.jar ../META-INF/MANIFEST.MF *
+  - jar cvfm ../OPTICastHTML.jar ../META-INF/MANIFEST2.MF *
   - echo Tests
   - java -cp .:../../junit.jar Tests/OPTIlibTest
   - cd ../
-  - chmod 777 OPTI.jar
+  - chmod 777 OPTICastHTML.jar
   - ls -Rall
-  - java -jar OPTI.jar
+  - java -jar OPTICastHTML.jar
   - cd OPTIweb/test
   - cp OPTIwebprof.html /tmp/OPTIweb.html
   - casperjs test casperAccueil.js
