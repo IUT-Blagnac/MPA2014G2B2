@@ -16,6 +16,7 @@ javac -cp ./bin/;./tools/junit.jar -d %BINDIR% %SRCDIR%Tests/OPTIlibTest.java
 @echo ///////////////////////////////////////////////////////
 cd %BINDIR%
 jar cvfm ../OPTI.jar ../META-INF/MANIFEST.MF *
+jar cvfm ../OPTICastHTML.jar ../META-INF/MANIFEST2.MF *
 cd %SPRINTDIR%
 
 @echo ///////////////////////////////////////////////////////
